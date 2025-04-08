@@ -12,14 +12,28 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.rentalpetik.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_account"
+        android:name="com.example.rentalpetik.ui.Akun.AkunFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_akun" >
+        <action
+            android:id="@+id/action_navigation_account_to_loginRegisActivity"
+            app:destination="@id/loginRegisActivity" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.rentalpetik.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_history"
+        android:name="com.example.rentalpetik.ui.History.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.rentalpetik.ui.LoginRegist.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/loginRegisActivity"
+        android:name="com.example.rentalpetik.ui.LoginRegist.LoginRegisActivity"
+        android:label="activity_login_regis"
+        tools:layout="@layout/activity_login_regis" />
 </navigation>

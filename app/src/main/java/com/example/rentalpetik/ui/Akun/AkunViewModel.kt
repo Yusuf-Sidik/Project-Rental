@@ -1,10 +1,10 @@
-package com.example.rentalpetik.ui.dashboard
+package com.example.rentalpetik.ui.Akun
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class AkunViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"

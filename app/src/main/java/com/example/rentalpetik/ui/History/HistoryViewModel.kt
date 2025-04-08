@@ -1,13 +1,13 @@
-package com.example.rentalpetik.ui.notifications
+package com.example.rentalpetik.ui.History
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class HistoryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "Tidak Ada History"
     }
     val text: LiveData<String> = _text
 }

@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RentalPetik"
+rootProject.name = "AutoRent"
 include(":app")
  
