@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.rentalpetik.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.rentalpetik.ui.Akun.AkunFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_akun" >
+        <action
+            android:id="@+id/action_navigation_account_to_loginRegisActivity"
+            app:destination="@id/loginRegisActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.rentalpetik.ui.History.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.rentalpetik.ui.LoginRegist.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/loginRegisActivity"
+        android:name="com.example.rentalpetik.ui.LoginRegist.LoginRegisActivity"
+        android:label="activity_login_regis"
+        tools:layout="@layout/activity_login_regis" />
+</navigation>

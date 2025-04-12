@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoRent</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">account</string>
+    <string name="title_history">History</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
